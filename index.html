@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drum Machine</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <main>
+   <div class="mpc-main">
+    <div class="mpc-main-head">
+      <div class="display">
+        <div class="display-text"></div>
+      </div>
+      <div class="logo-space">
+        <div class="logo"><p>UREY</p></div>
+        <div class="model">
+          <div class="model-top">MIXER</div>
+          <div class="model-bottom">2000 XL</div>
+        </div>
+      </div>
+    </div>
+    <div class="mpc-main-main">
+      <div class="switch-space">
+        <div class="power-wrapper">
+          <p class="power-label">POWER</p>
+          <button class="power-button"></button>
+        </div>
+        <div class="style-wrapper">
+          <p class="style-label">STYLE</p>
+          <div class="style-buttons">
+            <div class="hiphop-wrapper">
+              <p class="hiphop-label">HIPHOP</p>
+              <button class="hiphop-button"></button>
+            </div>
+            <div class="classic-wrapper">
+              <p class="classic-label">CLASSIC</p>
+              <button class="classic-button"></button>
+            </div>
+            <div class="synth-wrapper">
+              <p class="synth-label">SYNTH</p>
+              <button class="synth-button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="drum-space">
+        <div class="drum-wrapper">
+          <button id="q"></button>
+          <button id="w"></button>
+          <button id="e"></button>
+          <button id="a"></button>
+          <button id="s"></button>
+          <button id="d"></button>
+          <button id="y"></button>
+          <button id="x"></button>
+          <button id="c"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mpc-vol">
+    <div class="slider-wrapper">
+      <p>-</p>
+      <input type="range" min="0" max="1" value=".5" step=".1" id="volume-slider">
+      <p>+</p>
+    </div>
+    <div class="indiz-wrapper">
+      <div class="indiz"></div>
+      <div class="indiz"></div>
+      <div class="indiz"></div>
+      <div class="indiz"></div>
+      <div class="indiz"></div>
+      <div class="indiz"></div>
+      <div class="indiz"></div>
+      <div class="indiz"></div>
+      <div class="indiz"></div>
+    </div>
+    <p class="volume-label">VOLUME</p>
+  </div>
+  <div class="mpc-bottom"></div>
+ </main>
+  <script src="script.js"></script>
+</body>
+</html>
